@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" media="screen and (max-width: 800px)" href="celular.css">
+        <link rel="stylesheet" media="screen and (min-width: 801px)" href="telaCompleta.css">
+        <title>Meu currículo</title>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li class="estrela"><img src="assets/estrela.png" alt="estrela" width="50px" style="padding: 10px;"></li>
+                <li class="logo">Meu Currículo</li>
+                <div class="itens">
+                    <li><a href="#dados-pessoais">Dados Pessoais</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#experiencia">Experência</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </div>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <img id="eu" src="assets/perfil.jpg" alt="eu">
+            <h1 id="titulo-nome">João Pedro de Oliveira Santos</h1>
+            <h2 id="titulo-idade">16 anos</h2>
+            <h3 id="titulo-curso">Estudante do curso técnico de Informática</h3>
+        </div>
+
+        <section id="dados-pessoais">
+            <h2>Dados Pessoais</h2>
+            <p>Nome Completo: João Pedro de Oliveira Santos</p>
+            <p>Idade: 16 anos</p>
+            <p>Endereço: Rua Nossa Senhora da Salete, bairro Brasília</p>
+        </section>
+        
+        <section id="formacao">
+            <h2>Dados Acadêmicos</h2>
+            <p>Curso: Técnico em Informática</p>
+            <p>Ano: 3º</p>
+            <p>Instituição: Instituto Federal de Alagoas</p>
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiência</h2>
+            <p>Cargo: Não possui</p>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <img id="academia" src="assets/academia.png" alt="academia">
+            <img id="futebol" src="assets/camisa-de-futebol.png" alt="futebol">
+            <img id="pc" src="assets/computador-portatil.png" alt="computador">
+            <img id="videogame" src="assets/controle-de-video-game.png" alt="controle de videogame"> 
+            <p id="text-academia">Academia</p>
+            <p id="text-futebol">Futebol</p>
+            <p id="text-programar">Programar</p>
+            <p id="text-videogame">Videogame</p>
+        </section>
+
+        <section id="contato">
+            <h2 style="color: red;">Formulário de Contato</h2>
+            <form action="index.html" method="post">
+                <p id="nome-form">Nome</p>
+                <input type="text" name="Nome" id="Nome" required=true>
+                <p id="mensagem-form">Mensagem</p>
+                <input type="text" name="Mensagem" id="Mensagem" required="true">
+                <input type="submit" value="ENVIAR" id="btn-enviar" required=true>
+            </form>
+        </section>
+    </body>
+</html>

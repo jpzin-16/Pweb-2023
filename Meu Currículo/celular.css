@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: rgb(193, 193, 193);
+    padding: 5px 20px 5px 35px;
+    border-left: none;
+    border-right: none;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li.estrela {
+    padding: 1px 1px 1px 1px;
+}
+
+nav ul li.logo {
+    flex: 1;
+    padding: 3px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+nav ul div.itens {
+    padding: 0px;
+    display: inline-flex;
+}
+
+nav ul div.itens a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: black;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+nav ul div.itens a:hover {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    width: auto;
+    height: auto;
+    margin: 0;
+    border: 0;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.container #eu {
+    position: relative;
+    top: 60px;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+.container #titulo-nome {
+    position: relative;
+    top: -120px;
+    left: 70%;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.container #titulo-idade {
+    position: relative;
+    top: -115px;
+    left: 70%;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.container #titulo-curso {
+    position: relative;
+    top: -110px;
+    left: 70%;
+    font-size: 14px;
+}
+
+#dados-pessoais,
+#formacao,
+#experiencia,
+#contato {
+    border: 1px solid black;
+    display: flex;
+    justify-content: initial;
+    align-items: initial;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#dados-pessoais,
+#formacao,
+#experiencia {
+    height: 110px;
+}
+
+#hobbies {
+    height: 200px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#hobbies #academia,
+#hobbies #futebol,
+#hobbies #pc,
+#hobbies #videogame {
+    margin-top: 10px;
+}
+
+#hobbies #academia{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+}
+
+#hobbies #futebol{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+    left: 30px;
+}
+
+#hobbies #pc{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+    left: 60px;
+}
+
+#hobbies #videogame{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+    left: 90px
+}
+
+#hobbies p{
+    position: absolute;
+    align-self: flex-end;
+    justify-self: center;
+}
+
+#hobbies #text-academia{
+    left: 20px; 
+    font-size: 15px; 
+    font-weight: bold;
+}
+
+#hobbies #text-futebol{
+    left: 140px; 
+    font-size: 15px; 
+    font-weight: bold;
+}
+
+#hobbies #text-programar{
+    left: 245px; 
+    font-size: 15px; 
+    font-weight: bold;
+}
+
+#hobbies #text-videogame{
+    left: 360px; 
+    font-size: 15px; 
+    font-weight: bold;
+}
+
+#contato {
+    height: 150px;
+    flex-direction: row;
+    padding: 20px;
+}
+
+#contato #nome-form,
+#contato #mensagem-form,
+#contato #btn-enviar,
+#contato #Nome,
+#contato #Mensagem {
+    position: relative;
+    left: 10px;
+}
+
+#contato #nome-form,
+#contato #mensagem-form {
+    display: flex;
+    align-items: center;
+}
+
+#contato #nome-form,
+#contato #mensagem-form
+{
+    left: 10px;
+}
+
+#contato #btn-enviar{
+    left: 30px;
+    top: -70px;
+    width: 80px;
+    padding: 5px;
+}
+
+#contato #Nome,
+#contato #Mensagem {
+    height: 40px;
+    font-size: 18px;
+}
+
+@media (max-width: 500px) {
+    nav ul li.logo {
+        font-size: 18px;
+    }
+
+    nav ul div.itens a {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .container #eu {
+        top: 30px;
+        left: 10px;
+        width: 240px;
+        height: 240px;
+    }
+
+    .container #titulo-nome,
+    .container #titulo-idade,
+    .container #titulo-curso {
+        top: -100px;
+        left: 20px;
+    }
+
+    #dados-pessoais,
+    #formacao,
+    #experiencia,
+    #hobbies,
+    #contato {
+        width: calc(100% - 20px);
+    }
+
+    #contato #nome-form,
+    #contato #mensagem-form,
+    #contato #btn-enviar,
+    #contato #Nome,
+    #contato #Mensagem {
+        left: 0;
+    }
+}
+#contato #btn-enviar:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

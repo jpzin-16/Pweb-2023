@@ -1,0 +1,48 @@
+*{
+    background-color: #f2f7e7;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #557c70;
+    font-size: 50px;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
+    height: 600px;
+    color: #557c70;
+    background-color: #f2f7e7;
+}
+
+.login #nome, #email, #nasc, #masculino, #feminino{
+    font-size: 15px;
+    margin-bottom: 15px;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-left: 2px;
+    border: 1px solid black;
+}
+
+.login #Tecnologia, #Gastronomia, #Arte, #Esportes{
+    width: 18px;
+    height: 18px;
+}
+
+.login #btn-login{
+    margin-top: 30px;
+    padding: 12px 60px 12px 60px;
+    color: #f2f7e7;
+    background-color: #557c70;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.login #btn-login:hover{
+    color: #557c70;
+    background-color: #f2f7e7;
+}

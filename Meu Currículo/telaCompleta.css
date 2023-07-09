@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: rgb(193, 193, 193);
+    padding: 5px 20px 5px 35px;
+    border-left: none;
+    border-right: none;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li.estrela{
+    padding: 1px 1px 1px 1px;
+}
+
+nav ul li.logo{
+    flex: 1;
+    padding: 3px;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+nav ul div.itens{
+    padding: 0px;
+    display: inline-flex;
+}
+nav ul div.itens a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: black;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+nav ul div.itens a:hover{
+    background-color: black;
+    color: white;
+}
+
+.container{
+    width: auto;
+    height: auto;
+    margin: 0;
+    border: 0;
+}
+
+.container #eu{
+    position: relative;
+    top: 60px;
+    left: 10%;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+.container #titulo-nome{
+    position: relative;
+    top: -120px;
+    left: 30%;
+    margin-bottom: 5px;
+}
+
+.container #titulo-idade{
+    position: relative;
+    top: -115px;
+    left: 30%;
+    margin-bottom: 5px;
+}
+
+.container #titulo-curso{
+    position: relative;
+    top: -110px;
+    left: 30%;
+}
+
+#dados-pessoais{
+    border: 1px solid black;
+    height: 110px;
+    width: calc(100% - 400px);
+    display: flex;
+    justify-content: initial;
+    align-items: initial;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    left: 10%;
+    margin-bottom: 10px;
+}
+
+#formacao{
+    border: 1px solid black;
+    height: 110px;
+    width: calc(100% - 400px);
+    display: flex;
+    justify-content: initial;
+    align-items: initial;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    left: 10%;
+    margin-bottom: 10px;
+}
+
+#experiencia{
+    border: 1px solid black;
+    height: 110px;
+    width: calc(100% - 400px);
+    display: flex;
+    justify-content: initial;
+    align-items: initial;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    left: 10%;
+    margin-bottom: 10px;
+}
+
+#hobbies{
+    border: 1px solid black;
+    height: 200px;
+    width: calc(100% - 400px);
+    display: flex;
+    justify-content: initial;
+    align-items: initial;
+    flex-direction: row;
+    padding: 10px;
+    position: relative;
+    left: 10%;
+    margin-bottom: 10px;
+}
+
+#hobbies #academia{
+    position: relative;
+    top: 30px;
+    left: 30px;
+    width: 120px;
+    height: 120px;
+    border-radius: 30%;
+}
+
+#hobbies #futebol{
+    position: relative;
+    top: 30px;
+    left: 150px;
+    width: 120px;
+    height: 120px;
+    border-radius: 30%;
+}
+
+#hobbies #pc{
+    position: relative;
+    top: 30px;
+    left: 300px;
+    width: 120px;
+    height: 120px;
+    border-radius: 30%;
+}
+
+#hobbies #videogame{
+    position: relative;
+    top: 30px;
+    left: 450px;
+    width: 120px;
+    height: 120px;
+    border-radius: 30%;
+}
+
+#hobbies p{
+    position: relative;
+    align-self: end;
+    justify-self: initial;
+}
+
+#hobbies #text-academia{
+    left: -425px; 
+    font-size: 18px; 
+    font-weight: bold;
+}
+
+#hobbies #text-futebol{
+    left: -255px; 
+    font-size: 18px; 
+    font-weight: bold;
+}
+
+#hobbies #text-programar{
+    left: -60px; 
+    font-size: 18px; 
+    font-weight: bold;
+}
+
+#hobbies #text-videogame{
+    left: 125px; 
+    font-size: 18px; 
+    font-weight: bold;
+}
+
+#contato{
+        height: 150px;
+        width: calc(100% - 400px);
+        display: flex;
+        justify-content: initial;
+        align-items: initial;
+        flex-direction: row;
+        padding: 20px;
+        position: relative;
+        left: 10%;
+        margin-bottom: 10px;
+}
+
+#contato #nome-form, #Nome{
+    position: relative;
+    top: 40px;
+    left: -235px;
+    color: rgb(58, 58, 58);
+}
+
+#contato #mensagem-form, #Mensagem{
+    position: relative;
+    top: -20px;
+    left: 40px;
+    color: rgb(58, 58, 58);
+}
+
+#contato #Nome{
+    height: 40px;
+    font-size: 18px;
+}
+
+#contato #Mensagem{
+    height: 40px;
+    font-size: 18px;
+}
+
+#contato #btn-enviar{
+    position: relative;
+    top: -20px;
+    left: 70px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+#contato #btn-enviar:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
