@@ -3,65 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
     <link rel="stylesheet" href="style.css">
-    <title>Material Design Sign Up Form</title>
 </head>
 <body>
-    <div class="md-inline-form">
-        <div id="SignupContent" class="md-whiteframe-10dp">
-            <div id="materialToolbar">
-                <div class="md-toolbar-tools">
+    <div class="formulario">
+        <div id="container-form" class="fundo-branco">
+            <div id="toolbar">
+                <div class="ferramentas-toolbar">
                     <span flex=""></span>
-                    <span class="md-headline" align="center">Material Design Sign Up Form</span>
+                    <span class="linha-titulo">Material Design Sign Up Form</span>
                     <span flex=""></span>
                 </div>
             </div>
-            <div layout-padding="">
+            <div>
                 <div></div>
-                <form name="userForm" method="POST" action="" enctype="multipart/form-data">
-                    <input type="hidden" name="action" value="signup" />
+                <form method="POST" action="" name="userForm" enctype="multipart/form-data">
+                    <input type="hidden" name="action" value="signup">
                     <div class="name-container">
                         <div class="name-field">
                             <label for="first_name">First name</label>
-                            <input id="first_name" name="first_name" required type="text" pattern="^[a-zA-Z'. -]+$" placeholder="Your First Name">
+                            <input type="text" name="first_name" id="first_name" placeholder="Your first name">
                         </div>
                         <div class="name-field">
-                            <label for="last_name">Last Name</label>
-                            <input id="last_name" name="last_name" required type="text" pattern="^[a-zA-Z'. -]+$" placeholder="Your Last Name">
+                            <label for="last_name">Last name</label>
+                            <input type="text" name="last_name" id="last_name" placeholder="Your last name">
                         </div>
                     </div>
                     <div class="gender-age-container">
                         <div class="gender-field">
-                            <p style="font-size: 12px; margin-left: 3px; margin-top: 18px;">Gender: </p>
-                            <input type="hidden" name="gender">
+                            <label for="gender" style="margin-right: 10px; font-size: 12px;">Gender:</label>
                             <div class="gender-options">
                                 <input type="radio" value="Male" id="male" name="gender">
                                 <label for="male">Male</label>
+                                <br>
                                 <input type="radio" value="Female" id="female" name="gender">
                                 <label for="female">Female</label>
+                                <p style="margin-right: 10px;"></p>
+                            </div>
+                            <div class="age-field">
+                                <label for="age" id="label-age">Age</label>
+                                <input type="number" name="age" id="age" step="any" min="0" max="100" placeholder="20">
                             </div>
                         </div>
-                        <div class="age-field">
-                            <label for="age">Age</label>
-                            <input id="age" required type="number" step="any" name="age" min="0" max="100" placeholder="20" />
-                        </div>
                     </div>
-                    <div>
+                    <div class="email-field">
                         <label for="email">Email</label>
-                        <input id="email" required type="email" name="email" pattern="/^[_a-z0-9-+]+(\.[_a-z0-9-+]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/" placeholder="someone@example.com" />
+                        <input type="email" name="email" id="email" placeholder="someone@example.com">
                     </div>
                     <div class="password-container">
                         <div class="password-field">
                             <label for="password">New Password</label>
-                            <input id="password" name="password" type="password" minlength="8" maxlength="100" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required placeholder="********">
+                            <input type="password" name="password" id="password">
                         </div>
                         <div class="password-field">
                             <label for="confmPassword">Confirm Password</label>
-                            <input id="confmPassword" name="confmPassword" type="password" minlength="8" maxlength="100" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required compare-to="user.password" placeholder="********">
+                            <input type="password" name="confmPassword" id="confmPassword">
                         </div>
                     </div>
-                    <button style="width:100%; margin: 0px 0px;" type="submit" name="submit">Submit</button>
-                    <a href="#" target="_blank" style="width:100%; margin: 15px 0px 0px 0px;">Code Pen Login Form</a>
+                    <button style="width: 100%; margin: 0px 0px;" type="submit" name="submit">Submit</button>
+                    <a>Code Pen Login Form</a>
                 </form>
             </div>
         </div>

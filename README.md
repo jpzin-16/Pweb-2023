@@ -4,7 +4,7 @@
 ## DADOS SOBRE MIM
 
 > - Nome: João Pedro de Oliveira Santos <br/>
-> - Idade: 16 anos <br/>
+> - Idade: 17 anos <br/>
 > - Escolaridade: Cursando o 3º ano do Ensino médio<br/>
 > - E-mail: jpos2@aluno.ifal.edu.br<br/>
 <hr>

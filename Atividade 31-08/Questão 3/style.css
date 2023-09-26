@@ -5,23 +5,24 @@ body {
     background-color: #cfcbbf;
 }
 
-.md-inline-form {
+.formulario {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-#SignupContent {
+#container-form {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 100%;
     max-width: 600px;
     border-radius: 4px;
+    height: auto;
 }
 
-#materialToolbar {
+#toolbar {
     background-color: #03a9f4;
     color: #fff;
     border-radius: 5px 5px 0 0;
@@ -29,107 +30,156 @@ body {
     text-align: center;
 }
 
-.md-toolbar-tools {
+.ferramentas-toolbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.md-headline {
+.linha-titulo {
     flex: 1;
     text-align: center;
     margin: 0;
 }
 
-.md-whiteframe-10dp {
+.fundo-branco {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
-.md-input-container {
-    width: 100%;
-}
-
-.my-message {
-    color: #d32f2f;
-}
-
-.md-radio-button {
-    margin-right: 10px;
-}
-
-.md-button {
-    margin-top: 10px;
-}
-
-/* Custom CSS for form elements */
-form {
-    margin-top: 20px;
-}
-
+/* Estilos para as labels */
 label {
+    display: block;
     font-weight: bold;
+    margin-bottom: 5px;
+    color: #888; /* Cor cinza para as labels */
+    font-size: 14px; /* Tamanho menor para as labels */
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"],
-input[type="radio"] {
-    width: 100%;
-    padding: 10px;
+/* Estilos para os campos de texto */
+.name-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
-input[type="radio"] {
-    width: auto;
-    margin-right: 10px;
+.name-field {
+    width: 70%;
+    display: inline-block;
 }
 
-.button-container {
-    margin-top: 20px;
-}
-
-button {
-    width: 100%;
+.name-field > input[type="text"] {
     padding: 10px;
-    background-color: #03a9f4;
+    margin-bottom: 4px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc; /* Alterado para uma borda cinza na parte inferior */
+    font-size: 16px; /* Tamanho maior para o texto no input */
+}
+
+.age-field {
+    width: 40%;
+    display: inline;
+}
+
+.age-field > input[type="number"] {
+    padding: 10px;
+    margin-bottom: 4px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc; /* Alterado para uma borda cinza na parte inferior */
+    font-size: 16px; /* Tamanho maior para o texto no input */
+}
+
+#label-age{
+    display: flex;
+    margin-left: 190px;
+}
+
+#age{
+    display: flex;
+    margin-left: 190px;
+}
+
+.email-field {
+    width: 100%;
+    display: block;
+}
+
+.email-field > input[type="email"] {
+    padding: 10px;
+    width: 90%;
+    margin-bottom: 4px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc; /* Alterado para uma borda cinza na parte inferior */
+    font-size: 16px; /* Tamanho maior para o texto no input */
+}
+
+.password-field {
+    width: 47%;
+    display: inline-block;
+}
+
+.password-field > input[type="password"] {
+    padding: 10px;
+    margin-bottom: 4px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc; /* Alterado para uma borda cinza na parte inferior */
+    font-size: 16px; /* Tamanho maior para o texto no input */
+}
+
+.gender-options label {
+    margin-right: 10px;
+    display: block;
+    font-weight: normal;
+    margin-bottom: 5px;
+    color: black; /* Cor cinza para as labels */
+    font-size: 14px; /* Tamanho menor para as labels */
+}
+
+.gender-field{
+    display: flex;
+}
+
+.gender-field > label{
+    display: block;
+    font-weight: normal;
+    margin-bottom: 5px;
+    color: black; /* Cor cinza para as labels */
+    font-size: 14px; /* Tamanho menor para as labels */
+}
+
+button[type="submit"] {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: #ccc;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 a {
     display: block;
+    width: 96.8%;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 15px 0 0 0;
     text-align: center;
-    margin-top: 15px;
+    color: #fff;
+    background-color: #03a9f4;
     text-decoration: none;
-    color: #03a9f4;
 }
 
-@media screen and (max-width: 600px) {
-    #SignupContent {
-        height: 100%;
-    }
-
-    #materialToolbar {
-        padding: 10px;
-    }
-
-    .name-container,
-    .gender-age-container,
-    .password-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .name-field,
-    .gender-field,
-    .age-field,
-    .password-field {
-        margin-bottom: 10px;
-    }
+form {
+    margin-top: 20px;
 }
