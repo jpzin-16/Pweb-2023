@@ -47,16 +47,15 @@ body {
     border-radius: 10px;
 }
 
-/* Estilos para as labels */
 label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    color: #888; /* Cor cinza para as labels */
-    font-size: 14px; /* Tamanho menor para as labels */
+    color: #888;
+    font-size: 14px;
+
 }
 
-/* Estilos para os campos de texto */
 .name-container {
     display: flex;
     flex-direction: row;
@@ -69,14 +68,14 @@ label {
     display: inline-block;
 }
 
-.name-field > input[type="text"] {
+.name-field>input[type="text"] {
     padding: 10px;
     margin-bottom: 4px;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #ccc; /* Alterado para uma borda cinza na parte inferior */
-    font-size: 16px; /* Tamanho maior para o texto no input */
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
 }
 
 .age-field {
@@ -84,22 +83,22 @@ label {
     display: inline;
 }
 
-.age-field > input[type="number"] {
+.age-field>input[type="number"] {
     padding: 10px;
     margin-bottom: 4px;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #ccc; /* Alterado para uma borda cinza na parte inferior */
-    font-size: 16px; /* Tamanho maior para o texto no input */
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
 }
 
-#label-age{
+#label-age {
     display: flex;
     margin-left: 190px;
 }
 
-#age{
+#age {
     display: flex;
     margin-left: 190px;
 }
@@ -109,15 +108,15 @@ label {
     display: block;
 }
 
-.email-field > input[type="email"] {
+.email-field>input[type="email"] {
     padding: 10px;
     width: 90%;
     margin-bottom: 4px;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #ccc; /* Alterado para uma borda cinza na parte inferior */
-    font-size: 16px; /* Tamanho maior para o texto no input */
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
 }
 
 .password-field {
@@ -125,14 +124,14 @@ label {
     display: inline-block;
 }
 
-.password-field > input[type="password"] {
+.password-field>input[type="password"] {
     padding: 10px;
     margin-bottom: 4px;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #ccc; /* Alterado para uma borda cinza na parte inferior */
-    font-size: 16px; /* Tamanho maior para o texto no input */
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
 }
 
 .gender-options label {
@@ -140,20 +139,20 @@ label {
     display: block;
     font-weight: normal;
     margin-bottom: 5px;
-    color: black; /* Cor cinza para as labels */
-    font-size: 14px; /* Tamanho menor para as labels */
+    color: black;
+    font-size: 14px;
 }
 
-.gender-field{
+.gender-field {
     display: flex;
 }
 
-.gender-field > label{
+.gender-field>label {
     display: block;
     font-weight: normal;
     margin-bottom: 5px;
-    color: black; /* Cor cinza para as labels */
-    font-size: 14px; /* Tamanho menor para as labels */
+    color: black;
+    font-size: 14px;
 }
 
 button[type="submit"] {
