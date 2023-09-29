@@ -74,7 +74,9 @@ form .forgot-pass{
 form .forgot-pass a{
     color: #008cff;
     text-decoration: none;
-    margin-left: 60px;
+    margin-left: 210px;
+    font-size: 10px;
+    
 }
   
 form .forgot-pass a:hover{
@@ -119,17 +121,4 @@ form .btn button{
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
-}
-
-form .signup-link{
-    text-align: center;
-}
-
-form .signup-link a{
-    color: #008cff;
-    text-decoration: none;
-}
- 
-form .signup-link a:hover{
-    text-decoration: underline;
 }
