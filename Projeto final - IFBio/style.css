@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.bar-navigation {
+    background-color: rgb(9, 104, 9);
+    color: #fff;
+}
+
+.bar-navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding-left: 5px;
+    padding-top: 4px;
+    padding-bottom: 8px;
+}
+
+.bar-navigation ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.bar-navigation ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: white;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.bar-navigation ul li a:hover {
+    color: #000;
+}
+
+.introduction-bar {
+    width: 100%;
+    font-weight: bold;
+    padding: 20px;
+    background-color: rgb(80, 255, 173);
+    color: #000;
+}
+
+.introduction-bar p {
+    text-align: center; /* Centraliza o texto */
+}
+
+.container-team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+    height: 600px; /* Aumenta a altura da div */
+    color: #fff;
+}
+
+.container-image {
+    background-color: grey;
+    width: 40%;
+    max-height: 420px; /* Use max-height em vez de height */
+    padding: 20px 30px 20px;
+    border-left: 30px solid transparent;
+    position: relative;
+    left: 30px;
+    top: 30px;
+    right: 20px;
+    overflow: hidden; /* Adicione overflow: hidden; para evitar o overflow */
+
+    /* Ajuste o tamanho da imagem cinza */
+    max-width: 100%; /* Evita que a imagem ultrapasse a largura da div */
+    max-height: 100%; /* Ajusta a altura da imagem para caber na div */
+}
+
+.container-text {
+    width: 55%;
+    padding: 20px;
+}
+
+.about-us {
+    padding: 20px;
+}
+
+contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.data-contact {
+    width: 45%;
+}
+
+.suggestions {
+    width: 45%;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(9, 104, 9);
+    color: #fff;
+    padding: 10px;
+}
